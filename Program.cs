@@ -27,6 +27,7 @@ public class Program
 
         if(input == word)
         {
+            Console.WriteLine();
             Console.WriteLine("The word is a palindrome");
         }
         else
