@@ -6,7 +6,7 @@ namespace Palindrome.Models;
 public class Program
 {
     
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Welcome to my Palindrome Checker App");
 
@@ -34,6 +34,24 @@ public class Program
             
         Console.WriteLine("Word is not a palindrome");
         }
+
+        Console.WriteLine();
+        Console.WriteLine("Would you like to go again?, enter y to go again. Enter any other letter to quit application");
+        Console.WriteLine();
+
+        string ans = Console.ReadLine().ToLower();
+        if(ans == "y")
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+            Main();
+        }
+        else
+        {
+            Console.WriteLine();
+            Console.WriteLine("Goodbye dear User");
+        }
+
     }
 
 }
